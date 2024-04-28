@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #111;
+}
+
+.firstPart {
+    height: 100vh;
+}
+
+.Titulo-Pg1 {
+    text-align: center;
+    font-size: 72px;
+
+    font-family: "FONTSPRING DEMO - The Seasons Regular";
+    color: white;
+    margin-top: 80px;
+}
+
+.grid {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+}
+
+.text {
+    grid-row: 1;
+    gap: 20px;
+    
+}
+
+.video {
+    grid-column: 2;
+}
+
+.subtitulo {
+    height: 120px;
+    font-size: 32px;
+    color: #FFF;
+    grid-row: 1;
+    
+    
+}
+
+.paragrafo-firstpart {
+    height: 40px;
+    font-size: 20px;
+    grid-column: 1;
+    color: #a6a6a6;
+}
+
+.btn-assinar {
+    margin-top: 40px;
+    grid-column: 1;
+    color: #69443C;
+
+
+    border-radius: 9999px;
+    padding: 18px;
+    border: none;
+}
+
+.videocopy {
+    width: 300px;
+    grid-column: 2;
+}
+
+.transition {
+    border: 2px solid tomato;
+    width: 1500px;
+    height: 2000px;
+
+}
+
+.pt2 {
+    gap: 52px;
+    margin: 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.copy {
+    color: #FFF;
+    padding: 12px;
+    border-radius: 6px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Titulo-Pg2 {
+    font-family: "HK Grotesk";
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    margin-right: 100px;
+    height: 60px;
+    padding: 16px;
+}
+
+.pcopy {
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 18px;
+    font-family: "Montserrat";
+}
+
+.Oferta {
+    padding: 24px;
+    margin-top: 20px;
+    background-color: #FFB000;
+    width: 360px;
+    height: 580px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.Oferta h1 {
+    margin-top: 60px;
+    font-size: 38px;
+    color: #FFF;
+    font-family: 'HK Grotesk';
+}
+
+.Oferta h2, h3{
+    font-family: "Montserrat";
+    color: #FFF;
+}
+
+.link-assinar {
+    background-color: #f2af1d;
+    border: 2px solid #f9f612;
+    text-decoration: none;
+    padding: 12px 16px;
+    color: #FFF;
+    border-radius: 22px;
+}
+
+.Oferta p {
+    text-align: center;
+    color: #FFF;
+    margin-top: 10px;
+    font-family: "Montserrat Alternates Black";
+
+}
+
+.part3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.titulo-Pg3 {
+    text-align: center;
+    font-family: "FONTSPRING DEMO - The Seasons Regular";
+    font-size: 60px;
+    margin-top: 40px;
+    color: #FFF;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 385px;
+    position: relative;
+    height: 500px;
+}
+
+.cardPrincipal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+    background-color:#fbe81c;
+    height: 420px;
+    width: 400px;
+    border-radius: 12px;
+    position: absolute;
+    font-family: "Montserrat";
+    color: #111;
+
+    box-shadow: 0 6px #000;
+
+}
+
+
+.cardPrincipal h2{
+    margin-top: 56px;
+}
+
+.cardPrincipal h1 {
+    font-size: 44px;
+}
+
+.link-assinarP {
+    background-color: #f2af1d;
+    border: 1px solid #f0ac0c;
+    text-decoration: none;
+    padding: 16px 28px;
+    color: #111;
+    border-radius: 22px;
+    margin-top: 12px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color:#FFB000;
+    color: #FFF;
+    height: 350px;
+    width: 380px;
+    border-radius: 12px;
+    font-family: "Montserrat";
+    
+}
+
+.cardL {
+    box-shadow: 0 4px 4px 0 #f9f612;
+}
+
+.cardR {
+    box-shadow: 0 4px 4px 0 #f9f612;
+}
+
+@media (max-width: 1333px) {
+    .pcopy {
+        font-size: 16px;
+    }
+
+    .Oferta {
+        margin-top: 120px;
+
+    }
+}
+
+@media (max-width: 800px) {
+
+    .pt2 {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+    }
+
+    .Oferta {
+    margin-top: 0;
+    }
+
+    .cards-container {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: relative;
+        height: 500px;
+    }
+    .cardPrincipal {
+        position: relative;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .Titulo-Pg1 {
+        font-size: 50px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .paragrafo-firstpart {
+        font-size: 18px;
+    }
+
+    .btn-assinar {
+        margin-top: 80px;
+    }
+
+    .pt2 {
+        margin: 0px;
+    }
+
+    .Titulo-Pg2 {
+        font-size: 30px;
+        margin-right: 0;
+        margin-top: 16px;
+    }
+
+    .pcopy{
+        font-size: 16px;
+    }
+
+    .titulo-Pg3 {
+        font-size: 34px;
+        margin-top: 0;
+    }
+}
